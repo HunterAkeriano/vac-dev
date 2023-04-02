@@ -44,7 +44,7 @@ export default {
 },
 watch: {
     '$route': function() {
-      if (this.$route.name === 'quiz') {
+      if (this.$route.name === 'quiz' || this.$route.name === 'quizId') {
         this.showFooter = false;
       } else {
         this.showFooter = true;
